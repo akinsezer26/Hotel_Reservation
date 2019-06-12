@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.mobilproje.ogu.otelrezervasyon.Profil_Menu">
+
+    <RelativeLayout
+
+        android:layout_width="350dp"
+        android:layout_height="550dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true">
+
+        <Button
+            android:id="@+id/Profil_btn_degistir"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="105dp"
+            android:layout_marginTop="487dp"
+            android:onClick="Guncelle"
+            android:text="Bilgileri Güncelle" />
+
+        <ImageButton
+            android:id="@+id/Profil_img_but"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="225dp"
+            android:layout_marginTop="170dp"
+            android:background="@android:drawable/screen_background_light_transparent"
+            android:src="@drawable/ic_menu_camera" />
+
+
+        <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/profile_image"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="105dp"
+            android:src="@drawable/profil_icon"
+            app:civ_border_color="@color/colorAccent"
+            app:civ_border_width="3dp" />
+
+        <EditText
+            android:id="@+id/Profil_Profil_isim"
+            android:layout_width="295dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="225dp"
+            android:hint="İsim  :"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/Profil_Profil_Soyisim"
+            android:layout_width="295dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="280dp"
+            android:hint="Soyisim :"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/Profil_Profil_Tel"
+            android:layout_width="295dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="330dp"
+            android:hint="Telefon :"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/Profil_Profil_Email"
+            android:layout_width="295dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="380dp"
+            android:hint="E-mail :"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/Profil_Profil_sifre"
+            android:layout_width="295dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="430dp"
+            android:hint="Sifre :"
+            android:textSize="20dp" />
+
+    </RelativeLayout>
+</RelativeLayout>

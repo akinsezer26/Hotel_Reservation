@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.mobilproje.ogu.otelrezervasyon.Profil_Menu">
+
+    <RelativeLayout
+
+        android:layout_width="350dp"
+        android:layout_height="550dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/profile_Info_image"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="105dp"
+            android:src="@drawable/profil_icon"
+            app:civ_border_color="@color/colorAccent"
+            app:civ_border_width="3dp" />
+
+        <TextView
+            android:id="@+id/Profil_ProfilInfo_isim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="225dp"
+            android:text="İsim       :"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/Profil_ProfilInfo_Soyisim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="275dp"
+            android:text="Soyisim :"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/Profil_ProfilInfo_Tel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="325dp"
+            android:text="Telefon  :"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/Profil_ProfilInfo_Email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="375dp"
+            android:text="E-mail    :"
+            android:textSize="20dp" />
+
+    </RelativeLayout>
+</RelativeLayout>

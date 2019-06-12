@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".HotelInfo">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="67dp">
+
+        <ImageView
+            android:id="@+id/HIhotelroompictures"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/HIhotelname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Hotel Adı"
+            android:textAlignment="center"
+            android:textSize="24sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:orientation="vertical"></LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Oda Tipi"
+                android:textAlignment="center"
+                android:textSize="16dp" />
+
+            <Spinner
+                android:id="@+id/HIroomtype"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"></Spinner>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/HIroomprice"
+            android:layout_width="match_parent"
+            android:layout_height="39dp"
+            android:hint="Oda Fiyat"
+            android:textAlignment="viewStart"
+            android:textSize="16dp" />
+        <TextView
+            android:id="@+id/HIroomintroduction"
+            android:layout_width="match_parent"
+            android:layout_height="78dp"
+            android:hint="Oda Tanıtım"
+            android:textAlignment="viewStart"
+            android:textSize="16dp" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Giriş Tarihi"
+                android:textSize="16dp" />
+
+            <DatePicker
+                android:id="@+id/HIstartdate"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:calendarViewShown="false"
+                android:datePickerMode="spinner"></DatePicker>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Çıkış Tarihi"
+                android:textSize="16dp" />
+            <DatePicker
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:calendarViewShown="false"
+                android:datePickerMode="spinner"
+                android:id="@+id/HIEnddate"
+                ></DatePicker>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/HIrezervasyonYap"
+            android:layout_marginTop="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Rezervasyon Yap"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>
